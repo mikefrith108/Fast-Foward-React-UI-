@@ -135,4 +135,68 @@
   .happiness-indicator .minus {
     color: red;
   }
-  
+  body {
+    background-color: #f8f8f8;
+  }
+  .title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #f7f7f7 0%, #ddd 100%);
+    padding: 10px 0;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.container {
+  font-family: 'Roboto', sans-serif;
+}
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.decision-buttons button:not(:last-child) {
+  margin-bottom: 5px;
+}
+.download-btn:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.tile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f8f8f8;
+}
+
+.tile-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tile-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.tile-container::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
