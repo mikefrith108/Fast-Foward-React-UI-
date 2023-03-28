@@ -66,7 +66,7 @@ const WireframeUI = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Welcome to my Wireframe UI</h1>
+      <h1 className="title">Fast Forward Wireframe</h1>
       <div className="tile-container">
         {tiles.map((tile, index) => {
           const nextTileIndex = index + 1;
