@@ -6,200 +6,190 @@
   flex-direction: column;
   align-items: center;
 }
-  
-  .title {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .tile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-  
-  .tile {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    width: 600px;
-  }
-  
-  .tile input[type='text'],
-  .tile textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .tile-connector {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    width: 1px;
-    height: 100%;
-  }
-  
-  .tile-connector svg {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .tile-connector line {
-    stroke-dasharray: 4;
-  }
-  
-  .add-tile {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .add-tile select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #eee;
-  }
-  
-  .download-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
-  .twine-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.8em;
-  }
-  
-  .decision-buttons {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .decision-buttons button {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .decision-buttons label {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .decision-buttons input[type='checkbox'] {
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .decision-buttons input[type='checkbox']:focus {
-    outline: none;
-    box-shadow: none;
-  }
-  
-  .health-indicator,
-  .wealth-indicator,
-  .happiness-indicator {
-    margin-top: 10px;
-  }
-  
-  .health-indicator span,
-  .wealth-indicator span,
-  .happiness-indicator span {
-    font-weight: bold;
-  }
-  
-  .health-indicator .plus,
-  .wealth-indicator .plus,
-  .happiness-indicator .plus {
-    color: green;
-  }
-  
-  .health-indicator .minus,
-  .wealth-indicator .minus,
-  .happiness-indicator .minus {
-    color: red;
-  }
-  body {
-    background-color: #f8f8f8;
-  }
-  .title {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    background: linear-gradient(to bottom, #f7f7f7 0%, #ddd 100%);
-    padding: 10px 0;
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-.container {
-  font-family: 'Roboto', sans-serif;
-}
-.tile:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.decision-buttons button:not(:last-child) {
-  margin-bottom: 5px;
-}
-.download-btn:hover {
-  animation: shake 0.5s;
+.title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0066cc;
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .tile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc #f8f8f8;
 }
 
-.tile-container::-webkit-scrollbar {
-  width: 6px;
+.tile {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 600px;
 }
 
-.tile-container::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 3px;
+.tile input[type='text'],
+.tile textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.2em;
 }
 
-.tile-container::-webkit-scrollbar-track {
-  background-color: #f8f8f8;
+.tile-connector {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 1px;
+  height: 100%;
+}
+
+.tile-connector svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tile-connector line {
+  stroke-dasharray: 4;
+}
+
+.add-tile {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.add-tile select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  font-size: 1.2em;
+}
+
+.download-btn {
+  background-color: #00b300;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #008000;
+}
+
+.twine-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.8em;
+}
+
+.decision-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.decision-buttons button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #0066cc;
+  transition: background-color 0.3s ease;
+}
+
+.decision-buttons button:hover {
+  background-color: #004080;
+}
+
+.decision-buttons label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.decision-buttons input[type='checkbox'] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.decision-buttons input[type='checkbox']:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.health-indicator,
+.wealth-indicator,
+.happiness-indicator {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.health-indicator span,
+.wealth-indicator span,
+.happiness-indicator span {
+  font-weight: bold;
+}
+
+.health-indicator .plus,
+.wealth-indicator .plus,
+.happiness-indicator .plus {
+  color: green;
+}
+
+.health-indicator .plus::before {
+  content: '+';
+}
+
+.health-indicator .minus::before {
+  content: '-';
+}
+
+.wealth-indicator .plus::before {
+  content: '+';
+}
+
+.wealth-indicator .minus::before {
+  content: '-';
+}
+
+.happiness-indicator .plus::before {
+  content: '+';
+}
+
+.happiness-indicator .minus::before {
+  content: '-';
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+
+.tile {
+  width: 90%;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.add-tile select {
+  width: 100%;
+}
+
 }
